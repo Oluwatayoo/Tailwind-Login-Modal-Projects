@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Smooch Sans", "sans serif"],
+              poppins: ["Poppins"],
+            },
+            screens: {
+              md: "820px",
+              md2: "900px",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div
+      class="flex items-center justify-center min-h-screen font-poppins bg-[#FC9B4E]/80"
+    >
+      <!-- Card Container -->
+      <div
+        class="flex flex-col relative md:flex-row md:w-full md2:w-[865px] xl:w-[1100px] overflow-hidden rounded-3xl md:rounded-[40px] shadow-xl shadow-black/50 md:p-7 md:pl-0 bg-white my-10 md:my-10 m-6 md:m-3"
+      >
+        <!-- Right Side -->
+        <div
+          class="p-6 pb-10 sm:pb-12 sm:px-16 sm:pt-6 md:py-0 md:px-8 md:mt-2 xl:px-20 flex flex-col items-center w-full"
+        >
+          <h1
+            class="text-[#1C1C1C] font-bold max-h-[120px] text-[110px] font-sans"
+          >
+            Welcome
+          </h1>
+
+          <p class="font-normal mt-1 text-sm mb-5 text-[#1C1C1C]">
+            We are glad to see you back with us
+          </p>
+
+          <div
+            class="flex w-full bg-[#F2F2F2] gap-2 px-3 mb-5 py-2.5 rounded-xl"
+          >
+            <img src="images/profile.png" alt="Profile Icon" />
+            <input
+              type="text"
+              class="placeholder:text-[#1C1C1C] placeholder:text-xs placeholder:font-normal text-sm text-[#1C1C1C] font-normal bg-[#F2F2F2] focus:outline-none"
+              placeholder="Username"
+            />
+          </div>
+
+          <div
+            class="flex w-full bg-[#F2F2F2] gap-2 px-3 mb-5 py-2.5 rounded-xl"
+          >
+            <img src="images/lock.png" alt="Lock Icon" />
+            <input
+              type="text"
+              class="placeholder:text-[#1C1C1C] placeholder:text-xs placeholder:font-normal text-sm text-[#1C1C1C] font-normal bg-[#F2F2F2] focus:outline-none"
+              placeholder="Password"
+            />
+          </div>
+
+          <button
+            class="uppercase w-full bg-[#1C1C1C] rounded-xl py-3 text-white font-bold text-xs hover:scale-105 hover:shadow-md hover:shadow-black/50 transition duration-300 hover:bg-opacity-80"
+          >
+            Next
+          </button>
+
+          <div class="flex items-center gap-1 justify-center my-5">
+            <div class="border-b border-[#F0EDFF] w-20"></div>
+            <p class="text-base text-[#1c1c1c]">
+              <span class="font-bold">Login</span> with Others
+            </p>
+            <div class="border-b border-[#F0EDFF] w-20"></div>
+          </div>
+
+          <div class="group w-full relative z-10">
+            <div
+              class="flex items-center justify-center mb-4 gap-2 py-2 border border-[#1C1C1C] bg-white rounded-xl group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-black/50 transition duration-300"
+            >
+              <div><img src="images/google logo.png" alt="Google Logo" /></div>
+              <p class="text-xs text-[#1c1c1c]">
+                Login with <span class="font-bold">Google</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="group w-full relative z-10">
+            <div
+              class="flex items-center justify-center gap-2 py-2 border border-[#1C1C1C] bg-white rounded-xl group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-black/50 transition duration-300"
+            >
+              <div>
+                <img src="images/facebook logo.png" alt="Facebook Logo" />
+              </div>
+              <p class="text-xs text-[#1c1c1c]">
+                Login with <span class="font-bold">Facebook</span>
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="images/Vector.png"
+            alt=""
+            class="hidden md:hidden xl:block sm:block absolute bottom-8 left-0"
+          />
+        </div>
+
+        <!-- Left Side -->
+        <img
+          src="images/background.png"
+          alt=""
+          class="rounded-[30px] hidden md:block w-1/2 min-h-[600px]"
+        />
+      </div>
+    </div>
+  </body>
+</html>

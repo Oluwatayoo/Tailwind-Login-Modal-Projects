@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Host Grotesk", "sans-serif"],
+              poppins: ["Poppins"],
+            },
+            screens: {
+              alt: "855px",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div
+      class="flex items-center justify-center min-h-screen bg-sky-300 font-sans"
+    >
+      <!-- Card Container -->
+      <div
+        class="flex flex-col bg-white alt:w-[820px] lg:w-[1000px] md:flex-row my-10 m-6 md:m-3 md:my-10 overflow-hidden rounded-2xl shadow-lg shadow-gray-400"
+      >
+        <!-- Left Side -->
+
+        <img
+          src="images/Background.png"
+          alt=""
+          class="max-h-[800px] w-1/2 hidden md:block"
+        />
+
+        <!-- Right Side -->
+        <div
+          class="flex flex-col relative overflow-hidden items-center p-10 lg:px-24 lg:pb-0 pb-0 rounded-2xl md:rounded-l-none"
+        >
+          <div class="absolute self-end right-0 w-40">
+            <img src="images/Airplane.png" alt="Airplane Vector" />
+          </div>
+
+          <h1 class="font-extrabold text-7xl pt-10 text-[#009EE2]">Welcome</h1>
+
+          <p class="font-medium text-base text-black/50">Login with Email</p>
+
+          <div
+            class="flex items-center gap-2 w-full mt-8 py-3 px-4 relative border border-[#009EE2] rounded-lg"
+          >
+            <p
+              class="absolute bg-white -top-2 px-1 font-poppins text-[10px] font-bold text-[#009EE2]"
+            >
+              Email Id
+            </p>
+            <img src="images/sms.png" alt="sms vector" />
+            <input
+              type="text"
+              class="focus:outline-none text-sm text-black placeholder:text-black/70 placeholder:text-sm placeholder:font-normal font-medium bg-white"
+              placeholder="Enter your Email"
+            />
+          </div>
+
+          <div
+            class="flex items-center gap-2 w-full mt-7 py-3 px-4 relative border border-[#009EE2] rounded-lg"
+          >
+            <p
+              class="absolute bg-white -top-2 px-1 font-poppins text-[10px] font-bold text-[#009EE2]"
+            >
+              Password
+            </p>
+            <img src="images/lock.png" alt="Lock vector" />
+            <input
+              type="text"
+              class="focus:outline-none text-sm text-black placeholder:text-black/70 placeholder:text-sm placeholder:font-normal font-medium bg-white"
+              placeholder="Enter your Password"
+            />
+          </div>
+
+          <p
+            class="self-end mt-6 cursor-pointer hover:underline underline-offset-4 hover:decoration-black/30 transition duration-200 text-black/50 font-bold text-xs"
+          >
+            Forgot your password?
+          </p>
+
+          <button
+            class="uppercase font-bold text-sm text-white bg-[#009EE2] py-3 px-9 rounded-md shadow-lg mt-6 hover:scale-105 transtion duration-200 hover:shadow-gray-400"
+          >
+            Login
+          </button>
+
+          <div class="flex items-center justify-center mt-5 gap-1">
+            <div class="border border-black/20 w-24"></div>
+            <p class="uppercase font-poppins text-black text-sm">or</p>
+            <div class="border border-black/20 w-24"></div>
+          </div>
+
+          <div class="flex gap-3 mt-7 items-center">
+            <div
+              class="py-3 px-8 rounded-md bg-[#E7F2F5] hover:shadow-lg hover:-translate-y-1 hover:bg-opacity-70 duration-200 transition hover:shadow-gray-400"
+            >
+              <div><img src="images/Google logo.png" alt="Google logo" /></div>
+            </div>
+
+            <div
+              class="py-3 px-8 rounded-md bg-[#E7F2F5] hover:shadow-lg hover:-translate-y-1 hover:bg-opacity-70 duration-200 transition hover:shadow-gray-400"
+            >
+              <img src="images/facebook logo.png" alt="Facebool logo" />
+            </div>
+            <div
+              class="py-3 px-8 rounded-md bg-[#E7F2F5] hover:shadow-lg hover:-translate-y-1 hover:bg-opacity-70 duration-200 transition hover:shadow-gray-400"
+            >
+              <img src="images/apple logo.png" alt="Apple logo" />
+            </div>
+          </div>
+
+          <p class="text-black text-sm mt-5">
+            Don't have account?
+            <span
+              class="font-bold hover:underline duration-200 transition underline-offset-4 hover:decoration-black"
+              >Register Now</span
+            >
+          </p>
+
+          <div class="flex justify-between">
+            <div class="relative flex items-end -left-14 lg:-left-28">
+              <img src="images/left.png" alt="" />
+            </div>
+            <div class="relative pt-3 -right-10 lg:-right-24">
+              <img src="images/right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

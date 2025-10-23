@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              image: "url('../images/image 1.png')",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Continer -->
+    <div
+      class="flex items-center justify-center min-h-screen bg-black/50 font-sans"
+    >
+      <!-- Card Container -->
+      <div
+        class="flex flex col md:flex-row rounded-2xl shadow-xl shadow-black/60 my-10 md:my-10 md:m-3 md:w-[750px] lg:w-[900px] m-6 md:m-0"
+      >
+        <!-- Left Side -->
+        <div
+          class="bg-white rounded-2xl md:rounded-r-none flex flex-col p-10 lg:p-20 items-center"
+        >
+          <h1 class="uppercase mb-6 text-black font-bold text-3xl">Login</h1>
+
+          <p class="font-normal mb-4 text-base text-[#525252]">
+            Type in your login details below
+          </p>
+
+          <div
+            class="flex items-center bg-[#F0EDFF] mb-4 w-72 py-2 px-3 gap-2 rounded-2xl"
+          >
+            <div><img src="images/Profile.png" alt="Profile icon" /></div>
+            <input
+              type="text"
+              class="border-none placeholder:text-[#1C1C1C] text-black placeholder:text-xs bg-[#F0EDFF] focus:outline-none"
+              placeholder="Username"
+            />
+          </div>
+
+          <div
+            class="flex items-center bg-[#F0EDFF] mb-5 w-72 py-2 px-3 gap-2 rounded-2xl"
+          >
+            <div><img src="images/Lock.png" alt="Lock icon" /></div>
+            <input
+              type="text"
+              class="border-none placeholder:text-[#1C1C1C] text-black placeholder:text-xs bg-[#F0EDFF] focus:outline-none"
+              placeholder="Password"
+            />
+          </div>
+
+          <button
+            class="bg-gradient-to-br hover:scale-105 hover:shadow-black/40 mb-6 transition duration-200 from-[#9181F4] to-[#5038ED] shadow-lg shadow-black/20 py-4 px-7 rounded-2xl text-xs font-bold text-white"
+          >
+            Login Now
+          </button>
+
+          <div class="flex items-center justify-center w-full mb-6">
+            <div class="border-b border-[#F0EDFF] w-[70px]"></div>
+            <p class="text-base text-black">
+              <span class="font-bold">Login</span> with others
+            </p>
+            <div class="border-b border-[#F0EDFF] w-[70px]"></div>
+          </div>
+
+          <div class="group w-full">
+            <div
+              class="flex items-center justify-center gap-2 group-hover:scale-105 duration-200 transition group-hover:shadow-lg py-2 rounded-2xl mb-4 border border-[#F0EDFF]"
+            >
+              <div><img src="images/google 1.png" alt="Google logo" /></div>
+              <p class="text-sm text-[#1C1C1C]">
+                Login with <span class="font-bold">Google</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="group w-full">
+            <div
+              class="flex items-center justify-center gap-2 group-hover:scale-105 duration-200 transition group-hover:shadow-lg py-2 rounded-2xl border border-[#F0EDFF]"
+            >
+              <div><img src="images/facebook 1.png" alt="Facebook logo" /></div>
+              <p class="text-sm text-[#1C1C1C]">
+                Login with <span class="font-bold">Facebook</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="hidden md:block bg-image rounded-r-2xl p-20 px-4">
+          <div class="relative">
+            <div class="h-full">
+              <img src="images/women with tab 1.png" alt="" />
+            </div>
+            <div class="absolute bottom-10">
+              <img src="images/Group 11.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
