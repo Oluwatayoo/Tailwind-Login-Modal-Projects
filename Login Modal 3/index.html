@@ -21,6 +21,7 @@
             },
             screens: {
               alt: "855px",
+              nl: "425px",
             },
           },
         },
@@ -35,7 +36,7 @@
     >
       <!-- Card Container -->
       <div
-        class="flex flex-col bg-white alt:w-[820px] lg:w-[1000px] md:flex-row my-10 m-6 md:m-3 md:my-10 overflow-hidden rounded-2xl shadow-lg shadow-gray-400"
+        class="flex flex-col bg-white alt:w-[820px] lg:w-[1000px] md:flex-row my-10 m-4 nl:m-6 md:m-3 md:my-10 overflow-hidden rounded-2xl shadow-lg shadow-gray-400"
       >
         <!-- Left Side -->
 
@@ -47,13 +48,15 @@
 
         <!-- Right Side -->
         <div
-          class="flex flex-col relative overflow-hidden items-center p-10 lg:px-24 lg:pb-0 pb-0 rounded-2xl md:rounded-l-none"
+          class="flex flex-col relative overflow-hidden items-center nl:p-10 nl:px-9 nl:pb-0 px lg:px-24 lg:pb-0 pt-10 px-7 pb-0 rounded-2xl md:rounded-l-none"
         >
           <div class="absolute self-end right-0 w-40">
             <img src="images/Airplane.png" alt="Airplane Vector" />
           </div>
 
-          <h1 class="font-extrabold text-7xl pt-10 text-[#009EE2]">Welcome</h1>
+          <h1 class="font-extrabold text-6xl nl:text-7xl pt-10 text-[#009EE2]">
+            Welcome
+          </h1>
 
           <p class="font-medium text-base text-black/50">Login with Email</p>
 
@@ -135,10 +138,12 @@
           </p>
 
           <div class="flex justify-between">
-            <div class="relative flex items-end -left-14 lg:-left-28">
+            <div
+              class="relative flex items-end -left-8 nl:-left-10 lg:-left-28"
+            >
               <img src="images/left.png" alt="" />
             </div>
-            <div class="relative pt-3 -right-10 lg:-right-24">
+            <div class="relative pt-3 -right-7 nl:-right-9 lg:-right-24">
               <img src="images/right.png" alt="" />
             </div>
           </div>
